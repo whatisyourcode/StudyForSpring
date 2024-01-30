@@ -17,6 +17,5 @@ public class FirstController {
         model.addAttribute("nickname","홍길동");
         return "goodbye";
     }
-
 }
 
