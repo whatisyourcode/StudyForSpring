@@ -16,6 +16,8 @@ public class Article {
     @Column             // content 필드 선언. DB 테이블의 content 연결됨.
     private String content;
 
+    public Article(){}
+
     public Article(Long id, String title, String content) {
         this.id = id;
         this.title = title;
