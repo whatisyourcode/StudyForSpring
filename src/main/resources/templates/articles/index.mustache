@@ -1,0 +1,21 @@
+{{>layouts/header}}
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Title</th>
+        <th scope="col">Content</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#articleList}} <!-- 데이터의 수만큼 이 부분을 반복 수행 -->
+        <tr>
+            <th>{{id}}</th>
+            <td>{{title}}</td>
+            <td>{{content}}</td>
+        </tr>
+    {{/articleList}} <!-- 여기까지 -->
+    </tbody>
+</table>
+
+{{>layouts/footer}}
