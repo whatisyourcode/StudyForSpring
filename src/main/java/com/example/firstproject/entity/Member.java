@@ -16,7 +16,7 @@ public class Member {
         private String content;
 
 
-        public Member(){}
+    public Member(){}
 
         public Member(Long id, String title, String content) {
             this.id = id;
@@ -32,4 +32,9 @@ public class Member {
                 ", content='" + content + '\'' +
                 '}';
         }
+
+        public Long getId() {
+            return id;
+        }
+
 }

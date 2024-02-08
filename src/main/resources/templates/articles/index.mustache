@@ -11,11 +11,13 @@
     {{#articleList}} <!-- 데이터의 수만큼 이 부분을 반복 수행 -->
         <tr>
             <th>{{id}}</th>
-            <td>{{title}}</td>
+            <td><a href="/articles/{{id}}">{{title}}</a></td>
             <td>{{content}}</td>
         </tr>
     {{/articleList}} <!-- 여기까지 -->
     </tbody>
 </table>
+
+<a href="/articles/new">New Article</a>
 
 {{>layouts/footer}}
