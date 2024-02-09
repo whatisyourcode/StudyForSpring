@@ -1,0 +1,19 @@
+{{>layouts/header}}
+
+{{#article}}
+<form class="container" action="/articles/update"   method="post"> <!-- 수정은 PATCH(PUT)메서드를 사용하지만 <form>태그에서 지원하는 HTTP 메서드는 GET과 POST밖에 없다.-->
+    <input type="hidden" name="id" value="{{id}}">  <!-- id가 몇 번의 article을 수정하는지 알려줘야 해서 추가함 -->
+    <div class="mb-3">
+        <label class="form-label">제목</label>
+        <input type="text" class="form-control" name="title" value="{{title}}">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">내용</label>
+        <textarea class="form-control" rows="3" name="content">{{content}}</textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <a href="/articles/{{id}}">Back</a>
+</form>
+{{/article}}
+
+{{>layouts/footer}}

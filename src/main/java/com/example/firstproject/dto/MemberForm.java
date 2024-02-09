@@ -1,11 +1,17 @@
 package com.example.firstproject.dto;
 
 import com.example.firstproject.entity.Member;
+import lombok.AllArgsConstructor;
+import lombok.ToString;
 
+@AllArgsConstructor
+@ToString
 public class MemberForm {
+    private Long id;
     private String email;
     private String content;
 
+    /*
     public MemberForm(String email, String content) {
         this.email = email;
         this.content = content;
@@ -19,7 +25,9 @@ public class MemberForm {
                 '}';
     }
 
+     */
+
     public Member toEntity(){
-        return new Member(null, email, content);
+        return new Member(id, email, content);
     }
 }
