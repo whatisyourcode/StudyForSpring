@@ -48,3 +48,10 @@
         </div>
     </div>
 </nav>
+
+{{#msg}}<!-- 경고 메시지 속성, 경고 메시지 색 , 알림을 닫을 수 있는 기능 추가 -->
+    <div class="alert alert-primary alert-dismissible" role="alert">
+    {{msg}} <!-- 버튼 타입 , 부트스트랩의 닫기 스타일 지정, 해당 버튼 클릭시 닫을 대상 , 버튼의 기능을 설명(접근성)-->
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+{{/msg}}
