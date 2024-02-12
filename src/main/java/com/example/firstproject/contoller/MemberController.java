@@ -45,9 +45,10 @@ public class MemberController {
     @GetMapping("/members/{id}")
     public String show(@PathVariable Long id, Model model){
         // 1.id를 조회하여 DB에서 해당 데이터 가져오기
-        Member member = memberRepository.findById(id).orElse(null);
+        Member memberEntity = memberRepository.findById(id).orElse(null);
+        log.info(memberEntity.toString());
         // 2. 모델에 데이터 등록하기
-        model.addAttribute("member", member);
+        model.addAttribute("member", memberEntity);
         // 3. 뷰 페이지 반환하기
         return "members/show";
     }
@@ -74,8 +75,10 @@ public class MemberController {
 
     @PostMapping("/members/update")
     public String update(MemberForm form){
+        log.info(form.toString());
         // 1. DTO를 엔티티로 변환하기
         Member memberEntity = form.toEntity();
+        log.info(memberEntity.toString());
         // 2. 엔티티를 DB에 저장하기
         // 2-1. DB에 기존 데이터 가져오기
         Member target = memberRepository.findById(memberEntity.getId()).orElse(null);
@@ -91,6 +94,8 @@ public class MemberController {
     public String delete(@PathVariable Long id, RedirectAttributes rttr){
         // 1. 삭제할 데이터를 찾기
         Member target = memberRepository.findById(id).orElse(null);
+        log.info(target.toString());
+
         // 2. DB에서 데이터 삭제하기
         if(target != null) {
             memberRepository.delete(target);
@@ -98,7 +103,9 @@ public class MemberController {
         }
         // 3. 리다이렉트로 결과 페이지 반환하기
         return "redirect:/members";
+        
     }
+        
 }
 
 

@@ -44,6 +44,7 @@ public class    ArticleController {
     public String show(@PathVariable Long id, Model model){
         // 1.id를 조회해 DB에서 해당 데이터 가져오기
         Article articleEntity = articleRepository.findById(id).orElse(null);
+        log.info(articleEntity.toString());
         // 2. 모델에 데이터 등록하기
         model.addAttribute("article", articleEntity);
         // 3.뷰 페이지 반환하기
@@ -96,6 +97,7 @@ public class    ArticleController {
         log.info("삭제 요청이 들어왔습니다.");
         // 1. 삭제할 대상 가져오기
         Article target = articleRepository.findById(id).orElse(null);
+        log.info(target.toString());
         // 2. 대상 엔티티 삭제하기
         if(target != null){
             articleRepository.delete(target);
