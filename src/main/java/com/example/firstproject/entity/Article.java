@@ -15,8 +15,8 @@ import lombok.ToString;
 public class Article {
     @Id                 // 엔티티의 대표값 지정. Primary Key
     @GeneratedValue(strategy= GenerationType.IDENTITY)     // 자동 생성 기능 추가 + db가 알아서 id 자동 생성.
-    private Long id;
-    @Column             // title 필드 선언. DB 테이블의 title 열과 연결됨.
+    private Long id;    
+    @Column             //   title 필드 선언. DB 테이블의 title 열과 연결됨.
     private String title;
     @Column             // content 필드 선언. DB 테이블의 content 연결됨.
     private String content;
