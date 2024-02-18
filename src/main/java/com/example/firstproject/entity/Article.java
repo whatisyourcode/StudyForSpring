@@ -20,6 +20,13 @@ public class Article {
     private String title;
     @Column             // content 필드 선언. DB 테이블의 content 연결됨.
     private String content;
+
+    public void patch(Article article) {
+        if(article.title != null)
+            this.title = article.title;
+        if(article.content != null)
+            this.content = article.content;
+    }
 /*  // 롬복으로 게터 추가
     public Long getId() {
         return id;
