@@ -17,7 +17,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import java.util.List;
 
 @Slf4j
-    @Controller
+@Controller
 public class MemberController {
     @Autowired
     private MemberRepository memberRepository;

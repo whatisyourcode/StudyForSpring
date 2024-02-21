@@ -8,26 +8,12 @@ import lombok.ToString;
 @ToString
 public class MemberForm {
     private Long id;
-    private String email;
+    private String title;
     private String content;
 
-    /*
-    public MemberForm(String email, String content) {
-        this.email = email;
-        this.content = content;
-    }
 
-    @Override
-    public String toString() {
-        return "MemberForm{" +
-                "email='" + email + '\'' +
-                ", content='" + content + '\'' +
-                '}';
-    }
-
-     */
 
     public Member toEntity(){
-        return new Member(id, email, content);
+        return new Member(id, title, content);
     }
 }
