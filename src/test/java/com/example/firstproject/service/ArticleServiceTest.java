@@ -94,10 +94,10 @@ class ArticleServiceTest {
     void update_성공_존재하는_id와_title만_있는_dto_입력(){
         // 1. 예상 데이터
         Long id = 1L;
+        Article expected = new Article(id,"라라라라","1111"); // 예상 데이터
         String title = "라라라라";
         String content = null;
         ArticleForm dto = new ArticleForm(id,title,content); // request 하는 값
-        Article expected = new Article(id,title,"1111"); // 예상 데이터
         // 2. 실제 데이터
         Article article = articleService.update(id,dto); // 실제 데이터
         // 3. 비교 및 검증
