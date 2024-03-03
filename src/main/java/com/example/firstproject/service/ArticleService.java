@@ -19,8 +19,6 @@ import java.util.stream.Collectors;
 public class ArticleService {
     @Autowired
     private ArticleRepository articleRepository;
-
-
     public List<Article> index() {
         return articleRepository.findAll();
     }

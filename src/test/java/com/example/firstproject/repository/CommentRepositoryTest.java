@@ -77,6 +77,4 @@ class CommentRepositoryTest {
             assertEquals(expected.toString(),comments.toString(),"Park의 모든 댓글을 출력!");
         }
     }
-
-
 }
