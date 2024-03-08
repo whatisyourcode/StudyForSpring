@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>셀프 체크 19</title>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <ul>
+        <li class="prerequisite">HTML</li>
+        <li class="prerequisite">CSS</li>
+        <li class="prerequisite">JavaScript</li>
+        <li class="prerequisite">Java</li>
+        <li>SQL</li>
+        <li>Spring Boot</li>
+    </ul>
+    <script>
+        // 이미 수강한 과목은 취소선 처리
+        const liElements = document.querySelectorAll("li");
+        // 모든 항목들 취소선 처리
+        // liElement.style.textDecoration = "line-through";
+        liElements.forEach( line => {
+            line.style.textDecoration = "line-through";
+        });
+    </script>
+</body>
+</html>

@@ -15,6 +15,10 @@
                         data-bs-body="{{body}}"
                         data-bs-article-id="{{articleId}}">
                 수정</button>
+                <!-- 댓글 삭제 버튼 -->
+                <button type="button"
+                    class="btn btn-sm btn-outline-danger comment-delete-btn"
+                    data-comment-id="{{id}}">삭제</button>
             </div>
             <div class="card-body">
                 {{body}}
@@ -66,9 +70,9 @@
 <script>
     {
         // 모달 요소 선택 ( 모달을 변수화 )
-        const commentEidtModal = document.querySelector("#comment-edit-modal");
+        const commentEditModal = document.querySelector("#comment-edit-modal");
         // 모달 이벤트 감지 ( 이벤트 타입 : 모달이 표시되기 직전 실행되는 이벤트 , function() )
-        commentEidtModal.addEventListener("show.bs.modal", function(event){
+        commentEditModal.addEventListener("show.bs.modal", function(event){
             // 1. 트리거 버튼 선택.event는 모달이며 관련된 타겟(relatedTarget)인 모달 트리거(button)을 변수화.
             const triggerBtn = event.relatedTarget;
             // 2. 데이터 가져오기
@@ -112,6 +116,42 @@
                 window.location.reload();
             });
         });
-
     }
+</script>
+<!-- 댓글 삭제 -->
+<script>
+    // 삭제 버튼 선택
+    const commentDeleteBtn = document.querySelectorAll(".comment-delete-btn");
+    // 삭제 버튼 이벤트 처리
+    // commentDeleteBtn.addEventListener("click",function(){
+    //    console.log("삭제 버튼이 클릭됐습니다.");
+    // });
+    commentDeleteBtn.forEach( btn => {
+        btn.addEventListener("click", (event)=> {
+            // 이벤트 발생 요소 선택
+            const commentDeleteBtn = event.target; // 삭제 버튼 변수화
+            // 삭제 댓글 id 가져오기
+            const commentId = commentDeleteBtn.getAttribute("data-comment-id");
+            console.log(`삭제 버튼 클릭: ${commentId}번 댓글`);
+            // 삭제 REST API 호출
+            const url = `/api/comments/${commentId}`;
+            fetch(url,{
+                method: "DELETE"
+            }).then(response => {
+                // 댓글 삭제 실패 처리
+                if(!response.ok){
+                    alert("댓글 삭제 실패..!");
+                    return
+                }
+                // 삭제 성공 시 댓글을 화면에서 지우고 메시지 창 띄우기
+                const target = document.querySelector(`#comments-${commentId}`);
+                target.remove();
+                const msg = `${commentId}번 댓글을 삭제했습니다`;
+                alert(msg);
+                // 현재 페이지 새로 고침
+                window.location.reload();
+            })
+        });
+    });
+
 </script>
