@@ -1,4 +1,4 @@
-<strong>2강</strong>
+<h2>2강</h2>
 <strong>1. 뷰 템플릿</strong><br>
 <p>웹 페이지를 하나의 틀로 만들고 여기에 변수를 삽입해 서로 다른 페이지로 보여주는 기술이다.</p>
 
@@ -23,32 +23,33 @@
 레이아웃 템플릿을 삽입할 때는 원하는 위치에서 <code>{{> 파일경로/파일명}}</code> 형식으로 작성한다.</p>
 
 
-<h2>3강</h2>
+<strong>3강</strong>
 
-<h2>1. 폼 데이터와 <code>&lt;form&gt;</code> 태그</h2>
+<strong>1. 폼 데이터와 <code>&lt;form&gt;</code> 태그</strong>
 <p>폼 데이터는 <code>&lt;form&gt;&lt;/form&gt;</code> 태그에 실려 전송되는 데이터를 말합니다. <code>&lt;form&gt;</code> 태그에는 전송할 데이터를 어디에 어떻게 보낼지도 설정하는데, 어디에 보낼지는 <code>action</code> 속성으로, 어떻게 보낼지는 <code>method</code> 속성으로 설정합니다.</p>
 
-<h2>2. DTO</h2>
+<strong>2. DTO</strong>
 <p>폼 데이터에 실어 보낸 데이터는 서버의 컨트롤러가 객체를 담아 받는데, 이 객체를 DTO(Data Transfer Object)라고 합니다. DTO로 받은 데이터는 최종적으로 데이터베이스(Data Base)에 저장됩니다.</p>
 
-<h2>3. 폼 데이터를 DTO로 받는 과정</h2>
+<strong>3. 폼 데이터를 DTO로 받는 과정</strong>
 <img src="https://github.com/whatisyourcode/StudyForSpring/assets/87058844/de864f71-69be-44ba-a16b-da335195c87a.png" alt="이미지 설명">
 
-<h2>4. 데이터베이스</h2>
+<strong>4. 데이터베이스</strong>
 <p>데이터를 관리하는 창고로, 줄여서 DB라고 합니다. DB의 모든 데이터는 행과 열로 구성된 테이블에 저장되고 관리됩니다.</p>
 
-<h2>5. JPA</h2>
+<strong>5. JPA</strong>
 <p>자바 언어로 DB에 명령을 내리게 하는 도구로 데이터를 객체 지향적으로 관리하도록 도와줍니다. JPA의 핵심도구로는 엔티티(entity)와 리파지터리(repository)가 있습니다.
 - 엔티티: 자바 객체를 DB가 이해할 수 있게 만든 것으로, 이를 기반으로 테이블이 만들어집니다.
 - 리파지터리: 엔티티가 DB 속 테이블에 저장 및 관리될 수 있게 하는 인터페이스입니다.</p>
 
-<h2>6. DTO를 DB에 저장하는 과정</h2>
+<strong>6. DTO를 DB에 저장하는 과정</strong>
 
-<h2>7. 의존성 주입</h2>
+<strong>7. 의존성 주입</strong>
 <p>외부에서 만들어진 객체를 필요한 곳으로 가져오는 기법을 의존성 주입(DI, Dependency Injection)이라고 합니다. 스프링 부트는 <code>@Autowired</code> 어노테이션으로 의존성 주입을 할 수 있습니다.</p>
 
-<h2>8. SQL</h2>
+<strong>8. SQL</strong>
 <p>SQL(Structured Query Language)은 데이터를 관리하기 위해 고안된 DB용 언어입니다. DB에 데이터를 생성(create), 조회(read), 수정(update), 삭제(delete)하는 CRUD 조작을 수행합니다.</p>
+
 
 --------------------------------------------------------------------------------------------------------------------------------------------<br>
 출처: https://www.gilbut.co.kr/book/view?bookcode=BN003778
