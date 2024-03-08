@@ -22,5 +22,6 @@
 2.DTO
 폼 데이터에 실어 보낸 데이터는 서버의 컨트롤러가 객체를 담아 받는데, 이 객체를 DTO(Data Trsnfer Object)라고 한다.DTO로 받은 데이터는 최종적으로 데이터베이스(Data Base)에 저장된다.
 3.폼 데이터를 DTO로 받는 과정
+![image](https://github.com/whatisyourcode/StudyForSpring/assets/87058844/412aabfc-4276-4d92-abc8-299471a384bc)  
 --------------------------------------------------------------------------------------------------------------------------------------------<br>
 출처: https://www.gilbut.co.kr/book/view?bookcode=BN003778
