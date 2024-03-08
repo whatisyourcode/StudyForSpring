@@ -43,6 +43,7 @@
 - 리파지터리: 엔티티가 DB 속 테이블에 저장 및 관리될 수 있게 하는 인터페이스입니다.</p>
 
 <strong>6. DTO를 DB에 저장하는 과정</strong>
+<img src="https://github.com/whatisyourcode/StudyForSpring/assets/87058844/97233979-8cdc-460d-9805-e7764f0ba9c1">
 
 <strong>7. 의존성 주입</strong>
 <p>외부에서 만들어진 객체를 필요한 곳으로 가져오는 기법을 의존성 주입(DI, Dependency Injection)이라고 합니다. 스프링 부트는 <code>@Autowired</code> 어노테이션으로 의존성 주입을 할 수 있습니다.</p>
