@@ -1,5 +1,5 @@
 <h2>2강</h2>
-1.뷰 템플릿
+1.<strong>뷰 템플릿</strong><br>
 <p>웹 페이지를 하나의 틀로 만들고 여기에 변수를 삽입해 서로 다른 페이지로 보여주는 기술이다.</p>
 2.<strong>MVC 패턴</strong><br>
 <p>웹 페이지를 화면에 보여주고(View), 클라이언트 요청을 받아 처리하고(Controller),데이터를 관리하는(Model) 역할을 영역별로 나누어 하는 기법을 말한다.</p>
@@ -21,7 +21,19 @@
 폼 데이터는 <form></form> 태그에 실려 전송되는 데이터를 말한다. <form> 태그에는 전송할 데이터를 어디에 어떻게 보낼지도 설정하는데, 어디에 보낼지는 action 속성으로,  어떻게 보낼지는 method 속성으로 설정한다.
 2.DTO
 폼 데이터에 실어 보낸 데이터는 서버의 컨트롤러가 객체를 담아 받는데, 이 객체를 DTO(Data Trsnfer Object)라고 한다.DTO로 받은 데이터는 최종적으로 데이터베이스(Data Base)에 저장된다.
-3.폼 데이터를 DTO로 받는 과정<br>
-![image](https://github.com/whatisyourcode/StudyForSpring/assets/87058844/de864f71-69be-44ba-a16b-da335195c87a) <br>
+3.폼 데이터를 DTO로 받는 과정
+<img src="https://github.com/whatisyourcode/StudyForSpring/assets/87058844/de864f71-69be-44ba-a16b-da335195c87a.png" alt="이미지 설명">
+4.데이터베이스
+데이터를 관리하는 창고로,줄여서 DB라고 한다.DB의 모든 데이터는 행과 열로 구성된 테이블에 저장되고 관리된다.
+5.JPA
+자바 언어로 DB에 명령을 내리게 하는 도구로 데이터를 객체 지향적으로 관리하도록 도와준다.Jpa의 핵심도구로는 엔티티(entity)와 리파지터리(repository)가 있다.
+- 엔티티 : 자바 객체를 DB가 이해할 수 있게 만든 것으로, 이를 기반으로 테이블이 만들어진다.
+- 리파지터리 : 엔티티가 DB 속 테이블에 저장 및 관리 될 수 있게 하는 인터페이스이다.
+6.DTO를 DB에 저장하는 과정
+7.의존성 주입
+외부에서 만들어진 객체를 필요한 곳으로 가져오는 기법을 의존성 주입(DI, Dependency Injection)이라고 한다.스프링 부트는 @Autowired 어노테이션으로 의존성 주입을 할 수 있다.
+8. SQL
+SQL(Structured Query Language)은 데이터를 관리하기 위해 고안된 DB용 언어이다.DB에 데이터를 생성(create),조회(read),수정(delete),삭제(delete)하는 CRUD 조작을 수행한다.
+
 --------------------------------------------------------------------------------------------------------------------------------------------<br>
 출처: https://www.gilbut.co.kr/book/view?bookcode=BN003778
