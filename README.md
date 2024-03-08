@@ -22,8 +22,7 @@
 <p>레이아웃 템플릿 파일은 <code>src > main > resources > templates</code> 디렉토리에 만든다. (프로젝트에서는 파일 관리를 편리하기 위해 <code>layouts</code> 디렉토리를 추가한 후 만들었다).<br>
 레이아웃 템플릿을 삽입할 때는 원하는 위치에서 <code>{{> 파일경로/파일명}}</code> 형식으로 작성한다.</p>
 
-
-<strong>3강</strong>
+<h2>3강</h2>
 
 <strong>1. 폼 데이터와 <code>&lt;form&gt;</code> 태그</strong>
 <p>폼 데이터는 <code>&lt;form&gt;&lt;/form&gt;</code> 태그에 실려 전송되는 데이터를 말합니다. <code>&lt;form&gt;</code> 태그에는 전송할 데이터를 어디에 어떻게 보낼지도 설정하는데, 어디에 보낼지는 <code>action</code> 속성으로, 어떻게 보낼지는 <code>method</code> 속성으로 설정합니다.</p>
