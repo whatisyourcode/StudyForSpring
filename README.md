@@ -73,8 +73,8 @@ Simple Logging Facade for java의 약자로,로깅할 때 사용합니다.로깅
 5강
 
 1. 데이터 조회 과정
-   ![image](https://github.com/whatisyourcode/StudyForSpring/assets/87058844/0f9a91a8-dda1-4b32-9de0-9afcaaae2966)
-
+![image](https://github.com/whatisyourcode/StudyForSpring/assets/87058844/d41a1624-4d99-4755-961c-a83e0c535f2b)
+ 
 3. @PathVariable
 4. findById()
 5. findAll()
