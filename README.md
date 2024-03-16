@@ -68,7 +68,18 @@
 toString() 메서드를 사용하는 것과 똑같은 효과를 냅니다.별도의 toString() 메서드를 사용하지 않아도 됩니다.
 
 7. Slf4j
-Simple Logging Facade for java의 약자로,로깅할 때 사용합니다.로깅 기능으로 로그를 찍으면 나중에라도 그동안 찍힌 로그를 찾아볼 수 있습니다.로그를 찍을 때는 log.info()문을 사용합니다.  
+Simple Logging Facade for java의 약자로,로깅할 때 사용합니다.로깅 기능으로 로그를 찍으면 나중에라도 그동안 찍힌 로그를 찾아볼 수 있습니다.로그를 찍을 때는 log.info()문을 사용합니다.
+
+5강
+
+1. 데이터 조회 과정
+   ![image](https://github.com/whatisyourcode/StudyForSpring/assets/87058844/0f9a91a8-dda1-4b32-9de0-9afcaaae2966)
+
+3. @PathVariable
+4. findById()
+5. findAll()
+6. {{#article}}{{/article}}
+7. 반환 데이터 타입 불일치 문제 해결 방법
 
 ------------------------------------------------------------------------------------------------------------------------------------------------<br>
 출처: https://www.gilbut.co.kr/book/view?bookcode=BN003778
