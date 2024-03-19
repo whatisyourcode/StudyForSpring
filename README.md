@@ -74,7 +74,8 @@
 
 <strong>1. 데이터 조회 과정</strong>
 <p>웹 페이지에서 게시글을 등록하면 서버를 통해 DB에 저장됩니다. DB에 저장된 데이터는 다음과 같은 과정을 거쳐 웹 페이지에서 조회할 수 있습니다.</p>
-<img src="https://github.com/whatisyourcode/StudyForSpring/assets/87058844/854d3ff1-7f37-499c-8fd8-dea7b0b303ea" alt="이미지">
+
+![다운로드](https://github.com/whatisyourcode/StudyForSpring/assets/87058844/9994acce-5e34-4644-a5b8-c95e857c879a)
 
 
 <ol>
