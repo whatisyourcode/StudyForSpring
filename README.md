@@ -77,7 +77,6 @@
 
 ![다운로드](https://github.com/whatisyourcode/StudyForSpring/assets/87058844/9994acce-5e34-4644-a5b8-c95e857c879a)
 
-
 <ol>
   <li>사용자가 웹 페이지에서 데이터를 조회해 달라고 URL 요청을 보냅니다.</li>
   <li>서버의 컨트롤러가 이 요청을 받아 해당 URL에서 찾으려는 데이터 정보(여기서는 id)를 리파지터리에 전달합니다.</li>
