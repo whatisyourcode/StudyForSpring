@@ -74,7 +74,7 @@
 
 <strong>1. 데이터 조회 과정</strong>
 <p>웹 페이지에서 게시글을 등록하면 서버를 통해 DB에 저장됩니다. DB에 저장된 데이터는 다음과 같은 과정을 거쳐 웹 페이지에서 조회할 수 있습니다.</p>
-![다운로드](https://github.com/whatisyourcode/StudyForSpring/assets/87058844/bfb1d89e-a416-40fe-a098-9fb14470ce95)
+![다운로드](https://github.com/whatisyourcode/StudyForSpring/assets/87058844/671e6e44-4885-4d86-bf55-b63deea787ae)
 <ol>
   <li>사용자가 웹 페이지에서 데이터를 조회해 달라고 URL 요청을 보냅니다.</li>
   <li>서버의 컨트롤러가 이 요청을 받아 해당 URL에서 찾으려는 데이터 정보(여기서는 id)를 리파지터리에 전달합니다.</li>
